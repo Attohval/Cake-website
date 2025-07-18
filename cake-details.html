@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cake Details | Cake Bliss</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">CakeBliss</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart">Cart 🛒</a>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <section class="cake-details">
+    <div class="cake-image">
+      <img src="images/cake1.jpg" alt="Chocolate Fudge Cake" />
+    </div>
+    <div class="cake-info">
+      <h1>Chocolate Fudge Cake</h1>
+      <p class="price">₦6,000</p>
+      <p class="desc">
+        A rich, moist chocolate cake made with premium cocoa, layered with smooth chocolate ganache and fudge frosting.
+        Perfect for birthdays, parties, or just because!
+      </p>
+      <form>
+        <label for="quantity">Quantity:</label>
+        <input type="number" value="1" min="1" id="quantity" />
+        <button type="submit" class="btn">Add to Cart</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Cake Bliss. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

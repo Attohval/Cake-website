@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart | Cake Bliss</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">CakeBliss</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="active cart">Cart 🛒</a>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <section class="cart-section">
+    <h1>Your Cart</h1>
+
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Total</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Example Item -->
+        <tr>
+          <td>
+            <div class="cart-item">
+              <img src="images/cake1.jpg" alt="Chocolate Fudge" />
+              <span>Chocolate Fudge Cake</span>
+            </div>
+          </td>
+          <td><input type="number" value="1" min="1" /></td>
+          <td>₦6,000</td>
+          <td>₦6,000</td>
+          <td><button class="remove-btn">✖</button></td>
+        </tr>
+        <!-- Add more rows dynamically with JS -->
+      </tbody>
+    </table>
+
+    <div class="cart-summary">
+      <h2>Order Summary</h2>
+      <p><strong>Subtotal:</strong> ₦6,000</p>
+      <p><strong>Delivery:</strong> ₦1,000</p>
+      <p><strong>Total:</strong> ₦7,000</p>
+      <a href="#" class="btn">Proceed to Checkout</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Cake Bliss. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
