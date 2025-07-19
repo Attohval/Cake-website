@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 body {
   font-family: 'Poppins', sans-serif;
@@ -31,18 +32,21 @@ body {
   gap: 20px;
 }
 .nav-links a {
-  text-decoration: none;
   color: #333;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.5s ease;
 }
 .nav-links a:hover {
   color: #ff5e7d;
+}
+.active {
+  border-bottom: 2px solid #ff5e7d;
 }
 .hamburger {
   display: none;
   font-size: 24px;
   cursor: pointer;
+  font-weight: 600;
 }
 
 /* Hero Section */
@@ -72,9 +76,8 @@ body {
   padding: 12px 24px;
   background-color: #ff5e7d;
   color: #fff;
-  text-decoration: none;
   border-radius: 30px;
-  transition: background 0.3s ease;
+  transition: 0.5s ease;
 }
 .hero-text .btn:hover {
   background-color: #e14c65;
@@ -86,6 +89,7 @@ body {
 .hero-img img {
   max-width: 100%;
   width: 400px;
+  border-radius: 32px;
 }
 
 /* Features Section */
@@ -128,16 +132,18 @@ body {
   font-size: 0.9rem;
 }
 
+
 /* Responsive */
 @media (max-width: 768px) {
   .nav-links {
+    align-items: center;
     display: none;
     flex-direction: column;
     background: #fff5f7;
     position: absolute;
     top: 70px;
-    right: 8%;
-    width: 200px;
+    right: 0;
+    width: 100%;
     padding: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   }
@@ -146,6 +152,15 @@ body {
   }
   .hamburger {
     display: block;
+  }
+  .active {
+    border: unset;
+  }
+  .nav-links a {
+    width: 100px;
+    text-align: center;
+    border-radius: 16px;
+    border: 2px solid #e14c65;
   }
   .hero {
     flex-direction: column;
@@ -156,7 +171,6 @@ body {
   }
 }
 
-/* first pasting*/
 
 /* Shop Banner */
 .shop-banner {
@@ -213,12 +227,10 @@ body {
   padding: 10px 20px;
   background-color: #ff5e7d;
   color: white;
-  text-decoration: none;
   border-radius: 25px;
   font-size: 0.9rem;
 }
 
-/* second pasting */
 
 /* Cake Details Page */
 .cake-details {
@@ -279,7 +291,7 @@ body {
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: 0.3s ease;
 }
 .cake-info .btn:hover {
   background-color: #e14c65;
@@ -296,7 +308,6 @@ body {
   }
 }
 
-/* third pasting*/
 
 /* About Hero */
 .about-hero {
@@ -354,7 +365,6 @@ body {
   }
 }
 
-/* fourth pasting */
 
 /* Contact Hero */
 .contact-hero {
@@ -411,7 +421,7 @@ body {
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: 0.3s ease;
 }
 .contact-form .btn:hover {
   background-color: #e14c65;
@@ -437,7 +447,6 @@ body {
   }
 }
 
-/* Fifth pasting */
 
 /* Cart Section */
 .cart-section {
@@ -504,7 +513,6 @@ body {
   padding: 12px 24px;
   background-color: #ff5e7d;
   color: white;
-  text-decoration: none;
   border-radius: 25px;
   transition: 0.3s ease;
 }
@@ -513,10 +521,29 @@ body {
 }
 
 @media (max-width: 768px) {
+  .cart-section {
+    padding: 60px 2%;
+  }
   .cart-item {
     flex-direction: column;
   }
   .cart-summary {
     width: 100%;
+  }
+}
+
+@media (max-width: 460px) {
+  .cart-table th,
+  .cart-table td {
+    padding: 16px 4px;
+  }
+  .remove-btn {
+    padding: 16px 8px;
+  }
+  .cart-table input[type="number"] {
+    width: 40px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
   }
 }
