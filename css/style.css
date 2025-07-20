@@ -166,6 +166,14 @@ body {
     flex-direction: column;
     text-align: center;
   }
+
+  .hero-img {
+    order: 1;
+  }
+
+  .hero-text {
+    order: 2;
+  }
   .hero-text h1 {
     font-size: 2.4rem;
   }
